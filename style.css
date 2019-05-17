@@ -1,0 +1,240 @@
+/* write your styles here */
+body{
+    margin:0px;
+   width: 100%;
+}
+marquee{
+    background-color: #ed484c;
+    color:white;
+}
+nav{
+    margin-top: -1px;
+    background-color: #4c4c4c;
+   
+}
+.img{ 
+    width: 50px;
+    height: 40px;
+}
+nav li{
+    display:inline-block;
+    list-style-type: none;
+    padding-left:40px;
+    margin-bottom: 10px;
+
+}
+
+nav ul{
+    text-align: right;
+}
+
+nav li a{
+    text-decoration: none;
+    color:#cacaca;
+    font-weight: bold;
+}
+.join-now{
+    padding-top: 2em;
+    text-align: center;
+    margin-top:-21px;
+    background-image: url("images/floral.png");
+    background-color: #f18d97;
+}
+
+.join-now h1 {
+    border-bottom: 1px solid black ;
+    width: 400px;
+    margin-left: 15em;}
+.join-now h3{
+    border-bottom: 1px solid black ;
+   width:500px;
+   margin-left: 23em;
+}
+button{
+    padding:15px 30px;
+    margin:20px 0px;
+    border:none;
+    background-color: black;
+    color: #f18d97;
+}
+.services{
+       display:flex;
+       text-align: center;
+}
+.our-service h1{
+    text-align: center;
+    margin: -1px 0px;
+    padding: 14px 0px;
+
+}
+.our-service{
+  background-image: url("images/floral.png");
+  background-color: #efece7;
+}
+.icon{
+    font-size: 80px;
+}
+.image{
+    width: 250px;
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.5);
+}
+.portfolio{
+    text-align: center;
+}
+.portfolio h1{
+    margin-top: 0px;
+    padding-top: 15px;
+    border-bottom: 1px solid black ;
+    width: 351px;
+    margin-left: 16em;
+}
+.portfolio h4{
+    border-bottom: 1px solid black ;
+    width: 500px;
+    margin-left: 28em;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+   text-align: center;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    padding: 60px;
+  }
+  
+  .portfolio{
+    background-image: url("images/floral.png");
+    background-color: #ddceb4;
+  }
+  .contact{
+    background-image: url("images/floral.png");
+    background-color: #acc4c3;
+    text-align: center;
+    margin-top: -20px;
+}
+  
+footer{
+    background-color: #212121;
+    color: white;
+    text-align: center;
+    padding:2px 0px;
+}
+.fa-twitter{
+    border:1px solid black ;
+    border-radius: 50%;
+    padding: 20px 20px;
+}
+.fa-youtube{
+    border:1px solid black ;
+    border-radius: 50%;
+    padding: 20px 20px;                                         
+}
+.fa-facebook-f{
+    border:1px solid black ;
+    border-radius: 50%;
+    padding: 20px 23px;
+}
+
+.fa-html5:hover{
+    color: #f18d97;
+}
+.fa-css3-alt:hover{
+    color: #f18d97;
+}
+.fa-js:hover{
+    color: #f18d97;
+}
+footer:hover .fa-heart{
+    color:red;
+}
+
+.fa-twitter:hover{
+    color:white;
+    background-color:black;
+}
+.fa-youtube:hover{
+    color:white;
+    background-color:black;
+}
+.fa-facebook-f:hover{
+    color:white;
+    background-color:black;
+}
+.wrapper{
+    font-family: sans-serif;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+
+}
+.image{
+    display:block;
+    width:100%;
+    height:auto;
+}
+span{
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    color:#fff;
+}
+#text{
+    display:block;
+    
+}
+.overlay{
+    position:absolute;
+    top:0;
+    left:1px;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+    opacity:0;
+    transition:.5s ease;
+    background-color:black;
+    color:white;
+}
+.wrapper:hover .overlay{
+    opacity:1;
+    border-radius: 20px;
+}
+.fa-eye{
+    border:1px solid white ;
+    border-radius: 50%;
+    padding: 20px 23px;
+}
+.fa-thumbs-up{
+    border:1px solid white ;
+    border-radius: 50%;
+    padding: 20px 23px;
+}
+.fa-heart{
+    border:1px solid white ;
+    border-radius: 50%;
+    padding: 20px 23px;
+}
+.i{
+    position: relative;
+    top:7em;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+     .main {
+      width: 100%;
+    }
+   
+  }
