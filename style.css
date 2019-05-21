@@ -1,75 +1,118 @@
 /* write your styles here */
+html, body{
+margin:0px;
+padding:0px;
+}
+
 body{
     margin:0px;
-   width: 100%;
-}
-marquee{
-    background-color: #ed484c;
-    color:white;
-}
-nav{
-    margin-top: -1px;
-    background-color: #4c4c4c;
-   
-}
-.img{ 
-    width: 50px;
-    height: 40px;
-}
-nav li{
-    display:inline-block;
-    list-style-type: none;
-    padding-left:40px;
-    margin-bottom: 10px;
-
+    background-image: url("images/floral.png");
+    width: 100%;
+    height: 100%;       
 }
 
-nav ul{
-    text-align: right;
-}
 
-nav li a{
-    text-decoration: none;
-    color:#cacaca;
+.marquee{
+   background-color: rgba(237, 72, 76, 1);
+   color:rgba(255, 255, 255, 1);
+    line-height:20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+ .marquee p{
+    margin: 0px;
+    padding: 5px 0px;
+    
+    padding-left:50%;
+    font-size: 15px;
     font-weight: bold;
+    animation:marquee 12s linear infinite;
+}
+@keyframes marquee{
+    0%{
+transform:translate(0,0);
+    }
+    100%{
+    transform:translate(-100%,0);
+    }     
+}
+
+    
+   
+    .nav{
+        display:flex;
+        justify-content: space-between;
+       align-items: center;
+       background-color:rgba(128, 128, 128, 1);
+       font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  color: #cac9c8;
+      }
+  .list-items ul li{
+    display: inline-flex;
+   padding: 10px 13px 10px 13px;
+  
+  }
+  .nav img{
+    width: 80px;
+  }
+
+.about-tech{
+   margin:0;
+   padding:0;
+   
+    padding-top: 16px;
+    background-color: rgba(252, 112, 126, 0.5);
 }
 .join-now{
-    padding-top: 2em;
-    text-align: center;
-    margin-top:-21px;
-    background-image: url("images/floral.png");
-    background-color: #f18d97;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .join-now h1 {
-    border-bottom: 1px solid black ;
-    width: 400px;
-    margin-left: 15em;}
+   font-family: 'Josefin Sans', sans-serif;
+   margin:0;
+  
+}
 .join-now h3{
+    font-family: 'Josefin Sans', sans-serif;
+    border-top:1px solid black;
     border-bottom: 1px solid black ;
-   width:500px;
-   margin-left: 23em;
+   padding:20px 0px;
 }
 button{
-    padding:15px 30px;
+    padding:15px 71px;
     margin:20px 0px;
     border:none;
     background-color: black;
-    color: #f18d97;
+    color:rgba(241, 141, 151, 1);
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 .services{
        display:flex;
        text-align: center;
+       
 }
-.our-service h1{
-    text-align: center;
-    margin: -1px 0px;
-    padding: 14px 0px;
+     
 
+.our-service h1{
+    font-family: 'Lobster', cursive;
+    margin:0;
+}
+.our-service h2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.our-service p {
+    font-family: 'Josefin Sans', sans-serif;
 }
 .our-service{
-  background-image: url("images/floral.png");
-  background-color: #efece7;
+  background-color:rgba(192, 181, 164, 0.5);
+ 
+    text-align: center;
 }
 .icon{
     font-size: 80px;
@@ -81,18 +124,23 @@ button{
 }
 .portfolio{
     text-align: center;
+    background-color:rgba(255, 188, 144, 0.5);
+  
+}
+.headings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .portfolio h1{
+    font-family: 'Lobster', cursive;
     margin-top: 0px;
     padding-top: 15px;
     border-bottom: 1px solid black ;
-    width: 351px;
-    margin-left: 16em;
 }
 .portfolio h4{
+    font-family: 'Josefin Sans', sans-serif;
     border-bottom: 1px solid black ;
-    width: 500px;
-    margin-left: 28em;
 }
 .grid-container {
     display: grid;
@@ -105,22 +153,24 @@ button{
     padding: 60px;
   }
   
-  .portfolio{
-    background-image: url("images/floral.png");
-    background-color: #ddceb4;
-  }
+  
   .contact{
-    background-image: url("images/floral.png");
-    background-color: #acc4c3;
+    background-color:rgba(135, 250, 244, 0.5);
     text-align: center;
-    margin-top: -20px;
+    padding: 2px 0px;
+    
+}
+.contact h2{
+    font-family: 'Lobster', cursive;
 }
   
 footer{
-    background-color: #212121;
-    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color:rgba(33, 33, 33, 1);
+    color: rgba(255, 255, 255, 1);
     text-align: center;
     padding:2px 0px;
+    
 }
 .fa-twitter{
     border:1px solid black ;
@@ -130,7 +180,8 @@ footer{
 .fa-youtube{
     border:1px solid black ;
     border-radius: 50%;
-    padding: 20px 20px;                                         
+    padding: 21px 20px;
+    margin: 0px 12px;                                        
 }
 .fa-facebook-f{
     border:1px solid black ;
@@ -213,28 +264,12 @@ span{
     border-radius: 50%;
     padding: 20px 23px;
 }
-.fa-heart{
+ figcaption .fa-heart{
     border:1px solid white ;
     border-radius: 50%;
     padding: 20px 23px;
-}
+} 
 .i{
     position: relative;
     top:7em;
 }
-
-@media only screen and (max-width:800px) {
-    /* For tablets: */
-    .main {
-      width: 80%;
-      padding: 0;
-    }
-    
-  }
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
-     .main {
-      width: 100%;
-    }
-   
-  }
