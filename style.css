@@ -273,3 +273,14 @@ span{
     position: relative;
     top:7em;
 }
+@media only screen and (max-width:600px){
+.services{
+    display:flex;
+    flex-direction: column;
+}
+.grid-container{
+    display: flex;
+    flex-direction: column;
+}
+
+}
